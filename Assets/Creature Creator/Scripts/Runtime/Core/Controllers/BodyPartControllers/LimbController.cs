@@ -13,7 +13,7 @@ namespace DanielLochner.Assets.CreatureCreator
         [SerializeField] private GameObject movePrefab;
         [SerializeField] private Transform[] bones;
         [SerializeField] private Transform extremity;
-
+        [SerializeField] private Vector3 rotationalOffset = new Vector3(90,0,0);
         private SkinnedMeshRenderer skinnedMeshRenderer;
         private MeshCollider meshCollider;
         #endregion
@@ -23,6 +23,7 @@ namespace DanielLochner.Assets.CreatureCreator
 
         public Transform[] Bones { get { return bones; } }
         public Transform Extremity { get { return extremity; } }
+        
         const float scrollWeigth = 5f;
         const float minSize = 0.1f;
         const float maxSize = 10f;
@@ -150,7 +151,7 @@ namespace DanielLochner.Assets.CreatureCreator
         {
             for (int j = 1; j < bones.Length; j++)
             {
-                bones[j - 1].rotation = Quaternion.LookRotation(bones[j].position - bones[j - 1].position, Vector3.right) * Quaternion.Euler(90, 0, 0);
+                bones[j - 1].rotation = Quaternion.LookRotation(bones[j].position - bones[j - 1].position, Vector3.right) * Quaternion.Euler(rotationalOffset);
 
                 //if (bones[j].transform.position.y <= 0) // Keeps all bones above ground.
                 //{
