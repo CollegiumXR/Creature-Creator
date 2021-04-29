@@ -45,6 +45,7 @@ MonoBehaviour:
     - accessory-02
     - accessory-03
     - arm-01
+    - arm-02
     - leg-01
     _keys:
     - mouth-01
@@ -56,6 +57,7 @@ MonoBehaviour:
     - accessory-02
     - accessory-03
     - arm-01
+    - arm-02
     - leg-01
     _values:
     - {fileID: 11400000, guid: 3e2d98c7570642443aa3c05f2b8bf60f, type: 2}
@@ -67,4 +69,5 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 204a67edda8d85f40b54b200439ef0ed, type: 2}
     - {fileID: 11400000, guid: 2300302e260d69a4e94c8f39b84b109c, type: 2}
     - {fileID: 11400000, guid: c49c660d4cd681b489b967ef22f6bc73, type: 2}
+    - {fileID: 11400000, guid: f262c1f46259dc6408a5f25c9d65e910, type: 2}
     - {fileID: 11400000, guid: 1dd2468a16d03f44483b5a46ff190f50, type: 2}
